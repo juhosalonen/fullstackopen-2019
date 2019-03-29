@@ -70,7 +70,7 @@ const App = () => {
           setTimeout(() => {
             setMessage(null)
           }, 5000)
-          return setPersons(persons.concat(response.data))
+          return setPersons(response.data)
         })
         .catch(error => {
           console.log('fail')
